@@ -1,0 +1,49 @@
+<section class="w-full lg:w-[740px] mx-auto py-14">
+
+  <img class="rounded-full size-32 mb-4" src="../../../assets/images/camilo-2.png" alt="camilodev-photo">
+
+  <div class="flex justify-center items-center flex-row gap-x-4 pb-4">
+    <h1 class="text-5xl font-bold">
+      Hola, soy Camilo
+    </h1>
+    <a href="https://www.linkedin.com/in/camilo-pujol-coll-b07a84252/" target="_blank" rel="noopener">
+      <app-badge [info]="'Disponible para trabajar'"></app-badge>
+    </a>
+  </div>
+  <h2 class="text-2xl opacity-80">
+    +2 años de experiencia. <span class="text-yellow-500 dark:text-yellow-300">Desarrollador Web
+    </span> de Valencia, España. Especializado en el desarrollo
+    <span class="text-yellow-500 dark:text-yellow-300">frontend con
+    <span class="text-red-600 dark:text-red-400">Angular</span>
+    </span> para la concepción de aplicaciones únicas.
+  </h2>
+
+  <nav class="flex flex-row justify-center items-center gap-x-20 py-4">
+    <!-- <a
+      class="rounded-full border p-1 hover:scale-110 hover:bg-gray-300 dark:hover:bg-gray-700 transition"
+      href="https://www.linkedin.com/in/camilo-pujol-coll-b07a84252/"
+      target="_blank"
+    >
+      <i class="ti ti-brand-linkedin"></i>
+      LinkedIn
+    </a> -->
+    <app-social-anchor
+      [ref]="'https://www.linkedin.com/in/camilo-pujol-coll-b07a84252/'"
+      [iconClass]="'ti ti-brand-linkedin'"
+      [anchorName]="'LinkedIn'"
+    >
+    </app-social-anchor>
+    <app-social-anchor
+      [ref]="'https://github.com/CamiloPC'"
+      [iconClass]="'ti ti-brand-github'"
+      [anchorName]="'GitHub'"
+    >
+    </app-social-anchor>
+    <app-social-anchor
+      [ref]="'mailto:campucoll@gmail.com'"
+      [iconClass]="'ti ti-brand-gmail'"
+      [anchorName]="'campucoll@gmail.com'"
+    >
+    </app-social-anchor>
+  </nav>
+</section>

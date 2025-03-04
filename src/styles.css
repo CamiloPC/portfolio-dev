@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: Onest;
+  src: url("./assets/fonts/Onest-VariableFont_wght.ttf") format("truetype");
+}
+
+
+
+html {
+  font-family: Onest, system-ui, sans-serif;
+}
+
+body {
+  /* background-color: black; */
+  display: flex;
+  justify-content: center;
+}

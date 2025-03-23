@@ -1,32 +1,26 @@
-<section class="w-full lg:w-[740px] mx-auto py-14">
+<section class="w-full md:w-[520px] lg:w-[740px] mx-auto py-10" id="about">
 
-  <img class="rounded-full size-32 mb-4" src="../../../assets/images/camilo-2.png" alt="camilodev-photo">
+  <div class="flex justify-center md:justify-start">
+    <img class="rounded-full size-22 md:size-28 lg:size-32 mb-4" src="../../../assets/images/camilo-2.png" alt="camilodev-photo">
+  </div>
 
-  <div class="flex justify-center items-center flex-row gap-x-4 pb-4">
-    <h1 class="text-5xl font-bold">
+  <div class="flex justify-center items-center flex-col gap-x-2 md:flex-row md:gap-x-6 pb-4">
+    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">
       Hola, soy Camilo
     </h1>
     <a href="https://www.linkedin.com/in/camilo-pujol-coll-b07a84252/" target="_blank" rel="noopener">
       <app-badge [info]="'Disponible para trabajar'"></app-badge>
     </a>
   </div>
-  <h2 class="text-2xl opacity-80">
+  <h2 class="text-xl lg:text-2xl opacity-80 max-w-[720px] mx-auto sm:mx-0 text-center sm:text-left">
     +2 años de experiencia. <span class="text-yellow-500 dark:text-yellow-300">Desarrollador Web
     </span> de Valencia, España. Especializado en el desarrollo
-    <span class="text-yellow-500 dark:text-yellow-300">frontend con
+    <span class="text-yellow-500 dark:text-yellow-300">front-end con
     <span class="text-red-600 dark:text-red-400">Angular</span>
     </span> para la concepción de aplicaciones únicas.
   </h2>
 
-  <nav class="flex flex-row justify-center items-center gap-x-20 py-4">
-    <!-- <a
-      class="rounded-full border p-1 hover:scale-110 hover:bg-gray-300 dark:hover:bg-gray-700 transition"
-      href="https://www.linkedin.com/in/camilo-pujol-coll-b07a84252/"
-      target="_blank"
-    >
-      <i class="ti ti-brand-linkedin"></i>
-      LinkedIn
-    </a> -->
+  <nav class="flex flex-row justify-center items-center gap-x-5 md:gap-x-12 lg:gap-x-20 py-4 pb-12">
     <app-social-anchor
       [ref]="'https://www.linkedin.com/in/camilo-pujol-coll-b07a84252/'"
       [iconClass]="'ti ti-brand-linkedin'"
@@ -42,8 +36,68 @@
     <app-social-anchor
       [ref]="'mailto:campucoll@gmail.com'"
       [iconClass]="'ti ti-brand-gmail'"
-      [anchorName]="'campucoll@gmail.com'"
+      [anchorName]="'@gmail'"
     >
     </app-social-anchor>
   </nav>
+
+</section>
+
+<section class="w-full md:w-[520px] lg:w-[740px] mx-auto py-10" id="experience">
+  <h2 class="text-2xl font-semibold pb-4 flex gap-x-4 items-center">
+    <i class="ti ti-briefcase"></i>
+    Experiencia
+  </h2>
+
+  <ol class="relative border-s border-gray-300 dark:border-gray-700 ml-3">
+    <app-xp-item
+      [time]="'Actualmente...'"
+      [title]="'Desarrollador Web front-end'"
+      [description]="'Desarrollo de aplicaciones web y proyectos personales con Angular, HTML, CSS, Tailwind, Material y JavaScript.'"
+    >
+    </app-xp-item>
+    <app-xp-item
+      [time]="'Mayo 2023 - Marzo 2025 / Copextel S.A.'"
+      [title]="'Especialista en Tecnologías y Servicios Técnicos'"
+      [description]="'Especialización en desarrollo web front-end con Angular. Desempeño como analista, diseñador y programador web en la empresa.'"
+    >
+    </app-xp-item>
+    <app-xp-item
+      [time]="'2018 - 2022 / Universidad Tecnológica de La Habana, Cuba'"
+      [title]="'Curso y Diplomado en la carrera de Ingeniería Informática en La Habana, Cuba'"
+      [description]="'Obtención de conocimientos generales en asignaturas de programación, diseño web, bases de datos, redes y sistemas operativos en la carrera de Ingeniería Informática.'"
+    >
+    </app-xp-item>
+  </ol>
+</section>
+
+<section class="w-full md:w-[520px] lg:w-[740px] mx-auto py-10" id="projects">
+  <h2 class="text-2xl font-semibold pb-4 flex gap-x-4 items-center">
+    <i class="ti ti-code-circle-2"></i>
+    Proyectos
+  </h2>
+
+  <div class="max-w-sm hover:scale-101 transition bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="rounded-t-lg" src="../../../assets/images/backlogProject.jpg" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              BacklogApp
+            </h5>
+        </a>
+        <p class="mb-4 font-normal text-gray-700 dark:text-gray-400">
+          Aplicación web para crear colecciones y listas de videojuegos, así como gestionar y filtrar videojuegos según el interés del usuario.
+        </p>
+        <i class="ti ti-device-desktop-code"></i>
+        <p class="mb-4 font-normal text-gray-700 dark:text-gray-400">
+          Angular, Material, HTML, CSS, Typescript.
+        </p>
+        <a href="#" class="hover:scale-103 transition gap-x-2 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Ver más...
+            <i class="ti ti-circle-arrow-right"></i>
+        </a>
+    </div>
+  </div>
 </section>

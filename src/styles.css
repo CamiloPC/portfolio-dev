@@ -13,10 +13,17 @@
 
 html {
   font-family: Onest, system-ui, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   /* background-color: black; */
   display: flex;
   justify-content: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }

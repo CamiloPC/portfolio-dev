@@ -1,5 +1,4 @@
 <section class="w-full md:w-[520px] lg:w-[740px] mx-auto py-10" id="about">
-
   <div class="flex justify-center md:justify-start">
     <img class="rounded-full size-22 md:size-28 lg:size-32 mb-4" src="../../../assets/images/camilo-2.png" alt="camilodev-photo">
   </div>
@@ -40,7 +39,6 @@
     >
     </app-social-anchor>
   </nav>
-
 </section>
 
 <section class="w-full md:w-[520px] lg:w-[740px] mx-auto py-10" id="experience">
@@ -77,27 +75,21 @@
     Proyectos
   </h2>
 
-  <div class="max-w-sm hover:scale-101 transition bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <img class="rounded-t-lg" src="../../../assets/images/backlogProject.jpg" alt="" />
-    </a>
-    <div class="p-5">
-        <a href="#">
-            <h5 class="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-              BacklogApp
-            </h5>
-        </a>
-        <p class="mb-4 font-normal text-gray-700 dark:text-gray-400">
-          Aplicación web para crear colecciones y listas de videojuegos, así como gestionar y filtrar videojuegos según el interés del usuario.
-        </p>
-        <i class="ti ti-device-desktop-code"></i>
-        <p class="mb-4 font-normal text-gray-700 dark:text-gray-400">
-          Angular, Material, HTML, CSS, Typescript.
-        </p>
-        <a href="#" class="hover:scale-103 transition gap-x-2 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Ver más...
-            <i class="ti ti-circle-arrow-right"></i>
-        </a>
-    </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <app-project-card
+        [linkRef]="'#'"
+        [imgSrc]="'../../../assets/images/backlogProject.jpg'"
+        [projectName]="'BacklogApp'"
+        [projectDesc]="'Aplicación web para crear colecciones y listas de videojuegos, así como gestionar y filtrar videojuegos según el interés del usuario.'"
+        [projectTechs]="'Angular, Material, HTML, CSS, Typescript.'">
+    </app-project-card>
+
+    <app-project-card
+        [linkRef]="'#'"
+        [imgSrc]="'../../../assets/images/portfolioProject.jpg'"
+        [projectName]="'Portfolio Web'"
+        [projectDesc]="'Portfolio web profesional. Incluye información sobre experiencia, proyectos y contacto del perfil.'"
+        [projectTechs]="'Angular, Tailwind CSS, HTML, CSS, Typescript'">
+    </app-project-card>
   </div>
 </section>

@@ -1,6 +1,6 @@
 <section class="w-full md:w-[520px] lg:w-[740px] mx-auto py-10" id="about">
   <div class="flex justify-center md:justify-start">
-    <img class="rounded-full size-22 md:size-28 lg:size-32 mb-4" src="../../../assets/images/camilo-2.png" alt="camilodev-photo">
+    <img class="rounded-full size-22 md:size-28 lg:size-32 mb-4" src="../../../assets/images/camilo-3.png" alt="camilodev-photo">
   </div>
 
   <div class="flex justify-center items-center flex-col gap-x-2 md:flex-row md:gap-x-6 pb-4">
@@ -55,14 +55,14 @@
     >
     </app-xp-item>
     <app-xp-item
-      [time]="'Mayo 2023 - Marzo 2025 / Copextel S.A.'"
+      [time]="'mayo 2023 - febrero 2025 / Copextel S.A.'"
       [title]="'Especialista en Tecnologías y Servicios Técnicos'"
       [description]="'Especialización en desarrollo web front-end con Angular. Desempeño como analista, diseñador y programador web en la empresa.'"
     >
     </app-xp-item>
     <app-xp-item
       [time]="'2018 - 2022 / Universidad Tecnológica de La Habana, Cuba'"
-      [title]="'Curso y Diplomado en la carrera de Ingeniería Informática en La Habana, Cuba'"
+      [title]="'Graduado en la carrera de Ingeniería Informática'"
       [description]="'Obtención de conocimientos generales en asignaturas de programación, diseño web, bases de datos, redes y sistemas operativos en la carrera de Ingeniería Informática.'"
     >
     </app-xp-item>
@@ -76,6 +76,14 @@
   </h2>
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <app-project-card
+        [linkRef]="'#'"
+        [imgSrc]="'../../../assets/images/gifsAppProject.jpg'"
+        [projectName]="'GifsApp'"
+        [projectDesc]="'Aplicación para búsqueda y visualización de gifs, con historial de búsqueda y utilizando la API de GIPHY.'"
+        [projectTechs]="'Angular, Bootstrap, HTML, CSS, Typescript'">
+    </app-project-card>
+
     <app-project-card
         [linkRef]="'#'"
         [imgSrc]="'../../../assets/images/backlogProject.jpg'"

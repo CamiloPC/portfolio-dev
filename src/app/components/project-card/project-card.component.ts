@@ -1,9 +1,14 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-project-card',
   standalone: true,
-  imports: [],
+  imports: [
+    CommonModule,
+    TranslateModule
+  ],
   templateUrl: './project-card.component.html',
   styles: `
     :host {

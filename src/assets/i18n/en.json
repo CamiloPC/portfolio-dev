@@ -1,0 +1,58 @@
+{
+  "HEADER": {
+    "HOME": "Home",
+    "XP": "Experience",
+    "PROJECTS": "Projects",
+    "ABOUT": "About me",
+    "CONTACT": "Contact"
+  },
+  "ABOUT": {
+    "HELLO": "Hi, I'm Camilo",
+    "AVAILABLE": "Available for work",
+    "UNAVAILABLE": "Currently unavailable",
+    "EXPERIENCE": "+3 years of experience.",
+    "ROLE": "Web Developer",
+    "LOCATION": " from Valencia, Spain.",
+    "SPECIALIZED": " Specialized in front-end development with",
+    "TECH": "Angular",
+    "UNIQUE": " to build unique applications."
+  },
+  "EXPERIENCE": {
+    "TITLE": "Experience",
+    "CURRENT": {
+      "TITLE": "Currently",
+      "ROLE": "Front-end Web Developer",
+      "DESCRIPTION": "Development of web applications and personal projects using Angular, HTML, CSS, Tailwind, Material, and JavaScript."
+    },
+    "COPEXTEL": {
+      "TITLE": "May 2023 - February 2025 / Copextel S.A.",
+      "ROLE": "Specialist in Technologies and Technical Services",
+      "DESCRIPTION": "Specialization in front-end web development with Angular. Worked as analyst, designer, and web programmer in the company."
+    },
+    "CUJAE": {
+      "TITLE": "2018 - 2023 / Technological University of Havana, Cuba",
+      "ROLE": "Graduate in Computer Engineering",
+      "DESCRIPTION": "Acquired general knowledge in programming, web design, databases, networks, and operating systems throughout the Computer Engineering degree."
+    }
+  },
+  "PROJECTS": {
+    "TITLE": "Projects",
+    "GIFS": {
+      "DESC": "Application for searching and viewing gifs, with search history and using the GIPHY API.",
+      "TECH": "Angular, Bootstrap, HTML, CSS, Typescript"
+    },
+    "BACKLOG": {
+      "DESC": "Web application to create collections and lists of video games, as well as manage and filter games according to the user's interests.",
+      "TECH": "Angular, Material, HTML, CSS, Typescript"
+    },
+    "COUNTRY": {
+      "DESC": "Application for searching country information, with filters by capital, country, and region.",
+      "TECH": "Angular, Bootstrap, HTML, CSS, Typescript"
+    },
+    "PORTFOLIO": {
+      "DESC": "Professional web portfolio. Includes information about experience, projects, and profile contact details.",
+      "TECH": "Angular, Tailwind CSS, HTML, CSS, Typescript"
+    },
+    "MORE": "See more..."
+  }
+}

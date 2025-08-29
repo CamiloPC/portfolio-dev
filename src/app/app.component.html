@@ -1,5 +1,27 @@
-
 <div class="w-screen h-screen dark:bg-gray-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+
+  <!-- Language Button -->
+  <button
+    (click)="toggleLang()"
+    title="Change language"
+    class="fixed top-4 left-4 p-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded shadow-blue-400 hover:cursor-pointer transition hover:scale-105 hover:shadow-md"
+  >
+    {{ langButtonLabel }} <i class="ti ti-language"></i>
+  </button>
+
+  <!-- Theme Button -->
+  <button
+    (click)="toggleTheme()"
+    title="Change theme"
+    class="fixed top-4 right-4 p-3 flex items-center gap-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded shadow-blue-400 hover:cursor-pointer transition hover:scale-105 hover:shadow-md"
+  >
+    @if (!darkMode) {
+      <i class="ti ti-sun"></i>
+    } @else {
+      <i class="ti ti-moon"></i>
+    }
+  </button>
+
   <router-outlet />
 </div>
 

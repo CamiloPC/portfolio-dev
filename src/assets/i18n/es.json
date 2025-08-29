@@ -1,0 +1,58 @@
+{
+  "HEADER": {
+    "HOME": "Inicio",
+    "XP": "Experiencia",
+    "PROJECTS": "Proyectos",
+    "ABOUT": "Sobre mí",
+    "CONTACT": "Contacto"
+  },
+  "ABOUT": {
+    "HELLO": "Hola, soy Camilo",
+    "AVAILABLE": "Disponible para trabajar",
+    "UNAVAILABLE": "No disponible",
+    "EXPERIENCE": "+3 años de experiencia.",
+    "ROLE": " Desarrollador Web",
+    "LOCATION": " de Valencia, España.",
+    "SPECIALIZED": " Especializado en el desarrollo front-end con",
+    "TECH": "Angular",
+    "UNIQUE": " para la concepción de aplicaciones únicas."
+  },
+  "EXPERIENCE": {
+    "TITLE": "Experiencia",
+    "CURRENT": {
+      "TITLE": "Actualmente",
+      "ROLE": "Desarrollador Web front-end",
+      "DESCRIPTION": "Desarrollo de aplicaciones web y proyectos personales con Angular, HTML, CSS, Tailwind, Material y JavaScript."
+    },
+    "COPEXTEL": {
+      "TITLE": "mayo 2023 - febrero 2025 / Copextel S.A.",
+      "ROLE": "Especialista en Tecnologías y Servicios Técnicos",
+      "DESCRIPTION": "Especialización en desarrollo web front-end con Angular. Desempeño como analista, diseñador y programador web en la empresa."
+    },
+    "CUJAE": {
+      "TITLE": "2018 - 2023 / Universidad Tecnológica de La Habana, Cuba",
+      "ROLE": "Graduado en la carrera de Ingeniería Informática",
+      "DESCRIPTION": "Obtención de conocimientos generales en asignaturas de programación, diseño web, bases de datos, redes y sistemas operativos en la carrera de Ingeniería Informática."
+    }
+  },
+  "PROJECTS": {
+    "TITLE": "Proyectos",
+    "GIFS": {
+      "DESC": "Aplicación para búsqueda y visualización de gifs, con historial de búsqueda y utilizando la API de GIPHY.",
+      "TECH": "Angular, Bootstrap, HTML, CSS, Typescript"
+    },
+    "BACKLOG": {
+      "DESC": "Aplicación web para crear colecciones y listas de videojuegos, así como gestionar y filtrar videojuegos según el interés del usuario.",
+      "TECH": "Angular, Material, HTML, CSS, Typescript"
+    },
+    "COUNTRY": {
+      "DESC": "Aplicación para búsqueda de información de países, con filtros por capital, por país y por región.",
+      "TECH": "Angular, Bootstrap, HTML, CSS, Typescript"
+    },
+    "PORTFOLIO": {
+      "DESC": "Portfolio web profesional. Incluye información sobre experiencia, proyectos y contacto del perfil.",
+      "TECH": "Angular, Tailwind CSS, HTML, CSS, Typescript"
+    },
+    "MORE": "Ver más..."
+  }
+}

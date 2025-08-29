@@ -5,18 +5,25 @@
 
   <div class="flex justify-center items-center flex-col gap-x-2 md:flex-row md:gap-x-6 pb-4">
     <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">
-      Hola, soy Camilo
+      {{ 'ABOUT.HELLO' | translate }}
     </h1>
     <a href="https://www.linkedin.com/in/camilo-pujol-coll-b07a84252/" target="_blank" rel="noopener">
-      <app-badge [info]="'Disponible para trabajar'"></app-badge>
+      <app-badge [info]="'ABOUT.AVAILABLE' | translate"></app-badge>
     </a>
   </div>
-  <h2 class="text-xl lg:text-2xl opacity-80 max-w-[720px] mx-auto sm:mx-0 text-center sm:text-left">
-    +3 años de experiencia. <span class="text-yellow-500 dark:text-yellow-300">Desarrollador Web
-    </span> de Valencia, España. Especializado en el desarrollo
-    <span class="text-yellow-500 dark:text-yellow-300">front-end con
-    <span class="text-red-600 dark:text-red-400">Angular</span>
-    </span> para la concepción de aplicaciones únicas.
+  <h2 class="text-xl lg:text-2xl opacity-80 max-w-[720px] mx-auto sm:mx-0 text-center sm:text-center">
+    {{ 'ABOUT.EXPERIENCE' | translate }}
+    <span class="text-yellow-500 dark:text-yellow-300">
+      {{ 'ABOUT.ROLE' | translate }}
+    </span>
+    {{ 'ABOUT.LOCATION' | translate }}
+    <span class="text-yellow-500 dark:text-yellow-300">
+      {{ 'ABOUT.SPECIALIZED' | translate }}
+      <span class="text-red-600 dark:text-red-400">
+        {{ 'ABOUT.TECH' | translate }}
+      </span>
+    </span>
+    {{ 'ABOUT.UNIQUE' | translate }}
   </h2>
 
   <nav class="flex flex-row justify-center items-center gap-x-5 md:gap-x-12 lg:gap-x-20 py-4 pb-12">
@@ -44,26 +51,26 @@
 <section class="w-full md:w-[520px] lg:w-[740px] mx-auto py-10" id="experience">
   <h2 class="text-2xl font-semibold pb-4 flex gap-x-4 items-center">
     <i class="ti ti-briefcase"></i>
-    Experiencia
+    {{ 'EXPERIENCE.TITLE' | translate }}
   </h2>
 
   <ol class="relative border-s border-gray-300 dark:border-gray-700 ml-3">
     <app-xp-item
-      [time]="'Actualmente...'"
-      [title]="'Desarrollador Web front-end'"
-      [description]="'Desarrollo de aplicaciones web y proyectos personales con Angular, HTML, CSS, Tailwind, Material y JavaScript.'"
+      [time]="'EXPERIENCE.CURRENT.TITLE' | translate"
+      [title]="'EXPERIENCE.CURRENT.ROLE' | translate"
+      [description]="'EXPERIENCE.CURRENT.DESCRIPTION' | translate"
     >
     </app-xp-item>
     <app-xp-item
-      [time]="'mayo 2023 - febrero 2025 / Copextel S.A.'"
-      [title]="'Especialista en Tecnologías y Servicios Técnicos'"
-      [description]="'Especialización en desarrollo web front-end con Angular. Desempeño como analista, diseñador y programador web en la empresa.'"
+      [time]="'EXPERIENCE.COPEXTEL.TITLE' | translate"
+      [title]="'EXPERIENCE.COPEXTEL.ROLE' | translate"
+      [description]="'EXPERIENCE.COPEXTEL.DESCRIPTION' | translate"
     >
     </app-xp-item>
     <app-xp-item
-      [time]="'2018 - 2022 / Universidad Tecnológica de La Habana, Cuba'"
-      [title]="'Graduado en la carrera de Ingeniería Informática'"
-      [description]="'Obtención de conocimientos generales en asignaturas de programación, diseño web, bases de datos, redes y sistemas operativos en la carrera de Ingeniería Informática.'"
+      [time]="'EXPERIENCE.CUJAE.TITLE' | translate"
+      [title]="'EXPERIENCE.CUJAE.ROLE' | translate"
+      [description]="'EXPERIENCE.CUJAE.DESCRIPTION' | translate"
     >
     </app-xp-item>
   </ol>
@@ -72,40 +79,40 @@
 <section class="w-full md:w-[520px] lg:w-[740px] mx-auto py-10" id="projects">
   <h2 class="text-2xl font-semibold pb-4 flex gap-x-4 items-center">
     <i class="ti ti-code-circle-2"></i>
-    Proyectos
+    {{ 'PROJECTS.TITLE' | translate }}
   </h2>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
     <app-project-card
         [linkRef]="'https://angular-material-gifs-app.netlify.app/'"
         [imgSrc]="'../../../assets/images/gifsAppProject.jpg'"
         [projectName]="'GifsApp'"
-        [projectDesc]="'Aplicación para búsqueda y visualización de gifs, con historial de búsqueda y utilizando la API de GIPHY.'"
-        [projectTechs]="'Angular, Bootstrap, HTML, CSS, Typescript'">
+        [projectDesc]="'PROJECTS.GIFS.DESC' | translate"
+        [projectTechs]="'PROJECTS.GIFS.TECH' | translate">
     </app-project-card>
 
     <app-project-card
         [linkRef]="'https://backlog-frontend.vercel.app/home'"
         [imgSrc]="'../../../assets/images/backlogProject.jpg'"
         [projectName]="'BacklogApp (Demo)'"
-        [projectDesc]="'Aplicación web para crear colecciones y listas de videojuegos, así como gestionar y filtrar videojuegos según el interés del usuario.'"
-        [projectTechs]="'Angular, Material, HTML, CSS, Typescript.'">
+        [projectDesc]="'PROJECTS.BACKLOG.DESC' | translate"
+        [projectTechs]="'PROJECTS.BACKLOG.TECH' | translate">
     </app-project-card>
 
     <app-project-card
         [linkRef]="'https://countryappng.netlify.app/'"
         [imgSrc]="'../../../assets/images/countryAppProject.jpg'"
         [projectName]="'CountryApp'"
-        [projectDesc]="'Aplicación para búsqueda de información de países, con filtros por capital, por país y por región.'"
-        [projectTechs]="'Angular, Bootstrap, HTML, CSS, Typescript'">
+        [projectDesc]="'PROJECTS.COUNTRY.DESC' | translate"
+        [projectTechs]="'PROJECTS.COUNTRY.TECH' | translate">
     </app-project-card>
 
     <app-project-card
         [linkRef]="'#'"
         [imgSrc]="'../../../assets/images/portfolioProject.jpg'"
         [projectName]="'Portfolio Web'"
-        [projectDesc]="'Portfolio web profesional. Incluye información sobre experiencia, proyectos y contacto del perfil.'"
-        [projectTechs]="'Angular, Tailwind CSS, HTML, CSS, Typescript'">
+        [projectDesc]="'PROJECTS.PORTFOLIO.DESC' | translate"
+        [projectTechs]="'PROJECTS.PORTFOLIO.TECH' | translate">
     </app-project-card>
   </div>
 </section>
